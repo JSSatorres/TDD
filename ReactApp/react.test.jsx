@@ -9,6 +9,5 @@ describe('Calculator', () => {
   it('should render Calculator component', () => {
     render(<Calculator />)
     screen.getByText('Calculator')
-    // test2
   })
 })
