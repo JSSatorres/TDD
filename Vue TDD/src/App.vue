@@ -1,13 +1,14 @@
 <template>
-  <HomeView />
+  <ArticleView />
 </template>
 
 <script>
-import HomeView from "./views/HomeView.vue";
+import ArticleView from "./views/ArticleView.vue";
+
 export default {
   name: "App",
   components: {
-    HomeView,
+    ArticleView,
   },
 };
 </script>
@@ -17,7 +18,6 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
 }
