@@ -1,8 +1,8 @@
-jest.mock("../services/CoursesRepository");
+jest.mock("../src/services/CoursesRepository");
 
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/vue";
-import CourseCollection from "../components/CourseCollection";
+import CourseCollection from "@/components/CourseCollection";
 import CoursesRepository from "@/services/CoursesRepository";
 
 const course = {
@@ -30,5 +30,9 @@ describe("CourseCollection component", () => {
     expect(screen.getByText(/a few seconds ago/i)).toBeInTheDocument();
 
     coursesRepo.searchAll.mockReset();
+    /* añadir en jest.config =>
+     restoreMocks:true
+     para no tener que escribir el mockReset de lalinea 32 en cada test que haya un mock
+    */
   });
 });
