@@ -1,12 +1,14 @@
 <template>
   <section class="comment">
-    <div class="comment__info">
+    <h2> Comments </h2>
+    <div>there are no</div>
+    <!-- <div class="comment__info">
       <em>
         <strong>{{ comment.username }}</strong> said:
       </em>
     </div>
     <h3>{{ comment.title }}</h3>
-    <p>{{ comment.body }}</p>
+    <p>{{ comment.body }}</p> -->
   </section>
 </template>
 
